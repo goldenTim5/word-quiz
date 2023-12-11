@@ -1,5 +1,5 @@
-import "./App.css";
 import Home from "./components/Home";
+import Keyboard from "./components/Keyboard";
 import Speech from "./components/Speech";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
       <Home></Home>
       <Speech />
+      <Keyboard correctLetter={"A"} />
     </>
   );
 }
