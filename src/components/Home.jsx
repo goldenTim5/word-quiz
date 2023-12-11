@@ -1,5 +1,11 @@
+import Words from "./Words";
+
 const Home = () => {
-  return <h1>Hello World</h1>;
+	return (
+		<>
+			<Words />
+		</>
+	);
 };
 
 export default Home;
