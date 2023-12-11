@@ -1,7 +1,8 @@
 export const words = [
 	{
 		word: "Cat",
-		image: "cat.jpeg",
+		image:
+			"https://clipart.info/images/ccovers/1522855947cartoon-cat-png-clip-art.png",
 	},
 	{
 		word: "Dog",
