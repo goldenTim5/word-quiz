@@ -1,9 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-const Start = () => {
-  const navigate = useNavigate();
-
+const Start = ({ setGameState }) => {
   return (
     <>
       <div id="start-screen">
@@ -15,7 +12,7 @@ const Start = () => {
       <button
         className="start-game"
         aria-label="start-game"
-        onClick={navigate("/Game")}
+        onClick={() => setGameState(1)}
       >
         Start Game
       </button>
