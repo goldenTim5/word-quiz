@@ -3,7 +3,6 @@ import KeyboardLetter from "./KeyboardLetter";
 import "./keyboard.scss";
 
 const Keyboard = ({ correctLetter }) => {
-	console.log(correctLetter);
 	const [lettersToShow, setLettersToShow] = useState();
 
 	const letters = [
