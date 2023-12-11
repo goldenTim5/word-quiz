@@ -1,12 +1,8 @@
-import "./App.css";
 import Home from "./components/Home";
+import Keyboard from "./components/Keyboard";
 
 function App() {
-	return (
-		<>
-			<Home></Home>
-		</>
-	);
+  return <Keyboard correctLetter={"A"} />;
 }
 
 export default App;
