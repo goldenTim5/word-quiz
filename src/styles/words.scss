@@ -1,0 +1,19 @@
+.words-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img {
+		width: 200px;
+	}
+	.letter {
+		font-size: 5em;
+		padding: 2rem;
+		padding-bottom: 0;
+		border-bottom: 2px solid #eee;
+	}
+	.guess-word {
+		display: flex;
+		gap: 1rem;
+	}
+}
