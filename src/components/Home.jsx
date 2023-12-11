@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Game from "./Game";
+
 import GameOver from "./GameOver";
 import Start from "./Start";
 import Words from "./Words";
