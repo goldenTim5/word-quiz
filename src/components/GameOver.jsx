@@ -1,23 +1,16 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
-import Score from "./Score";
 
-const GameOver = () => {
-  //   const navigate = useNavigate();
-
+const GameOver = ({ score, setGameState }) => {
   return (
     <>
       <div id="gameover-screen">
         <h1>Game Over</h1>
-        {/* <h1>You Scored {Score} </h1> */}
+        <h2>You Scored {score} points </h2>
         {/* <img src={`logo.svg`} alt={`${logo} Icon`} height="100px" width="100px" /> */}
         <p>Click on the button below to start a new game</p>
       </div>
-      <button
-        className="restart-game"
-        aria-label="restart-game"
-        // onClick={navigate("/Game")}
-      >
+      <button className="restart-game" aria-label="restart-game">
+        onClick={() => setGameState(0)}
         Play Again
       </button>
     </>
