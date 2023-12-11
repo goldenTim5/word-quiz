@@ -53,6 +53,7 @@ const Keyboard = ({ setInputLetter, correctLetter }) => {
       </div>
     </div>
   );
+
 };
 
 export default Keyboard;

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { words } from "../data/wordlist";
+
 import Words from "./Words";
 import Keyboard from "./Keyboard";
 
