@@ -8,9 +8,12 @@
 	}
 	.letter {
 		font-size: 5em;
-		padding: 2rem;
-		padding-bottom: 0;
+		padding-left: 2rem;
+		padding-right: 2rem;
 		border-bottom: 2px solid #eee;
+		&.selected {
+			outline: 2px solid blue;
+		}
 	}
 	.guess-word {
 		display: flex;

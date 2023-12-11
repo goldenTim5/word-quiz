@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { words } from "../data/wordlist";
 import Keyboard from "./Keyboard";
-import Words from "./Words";
+import Word from "./Word";
 
 const Game = ({ setGameState }) => {
 	// const [words, setWords] = useState(words);
@@ -9,6 +9,7 @@ const Game = ({ setGameState }) => {
 	const [wordObj, setWordObj] = useState(words[0]);
 	const [puzzleWord, setPuzzleWord] = useState([]);
 	const [correctLetter, setCorrectLetter] = useState("");
+	const [selectedLetter, setSelectedLetter] = useState("");
 
 	// const isCorrectGuess = inputLetter === missingLetter;
 
@@ -27,8 +28,15 @@ const Game = ({ setGameState }) => {
 
 	return (
 		<div>
-			<Words puzzleWord={puzzleWord} />
-			<Keyboard correctLetter={correctLetter} />
+			<Word
+				wordObj={wordObj}
+				puzzleWord={puzzleWord}
+				selectedLetter={selectedLetter}
+			/>
+			<Keyboard
+				correctLetter={correctLetter}
+				setSelectedLetter={setSelectedLetter}
+			/>
 		</div>
 	);
 };
