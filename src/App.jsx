@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <Home></Home>
-      <Speech />
-      <Keyboard correctLetter={"A"} />
+      {/* <Speech />
+      <Keyboard correctLetter={"A"} /> */}
     </>
   );
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import KeyboardLetter from "./KeyboardLetter";
 import "./keyboard.scss";
 
-const Keyboard = ({ correctLetter }) => {
+const Keyboard = ({ setInputLetter, correctLetter }) => {
   const [lettersToShow, setLettersToShow] = useState();
 
   const letters = [
@@ -23,13 +23,14 @@ const Keyboard = ({ correctLetter }) => {
     _lettersToShow.splice(2, _lettersToShow.length - 2);
 
     // add the letter we're looking for
-    _lettersToShow.push(correctLetter);
+    _lettersToShow.push(correctLetter.toUpperCase());
 
     setLettersToShow(_lettersToShow);
   };
 
   const handleClick = (letter) => {
     console.log(letter);
+    setInputLetter(letter);
   };
   const lettersJSX = letters.map((row) => {
     const rowJSX = row.map((letter) => {
