@@ -6,7 +6,12 @@ const Start = ({ setGameState }) => {
       <div id="start-screen">
         <h1>Start Game</h1>
         <h1>Welcome to What3Letters</h1>
-        {/* <img src={`logo.svg`} alt={`${logo} Icon`} height="100px" width="100px" /> */}
+        <img
+          src={`logo.svg`}
+          alt={`${logo} Icon`}
+          height="100px"
+          width="100px"
+        />
         <p>Click on the button below to start a new game</p>
       </div>
       <button
