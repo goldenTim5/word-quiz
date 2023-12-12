@@ -1,22 +1,22 @@
 .words-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-	img {
-		width: 200px;
-		cursor: pointer;
-	}
-	.letter {
-		font-size: 5em;
-		padding: 2rem;
-		padding-bottom: 0;
-		border-bottom: 2px solid black;
-		cursor: pointer;
-	}
-	.guess-word {
-		display: flex;
-		gap: 1rem;
-		margin-bottom: 2rem;
-	}
+  img {
+    width: 250px;
+    cursor: pointer;
+  }
+  .letter {
+    font-size: 5em;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+  }
+  .guess-word {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
 }

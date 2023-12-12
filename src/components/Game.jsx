@@ -4,6 +4,8 @@ import { useTextToSpeech } from "../controller/speechController";
 import { words } from "../data/wordlist";
 import Keyboard from "./Keyboard";
 import Words from "./Words";
+import "./game.scss";
+
 
 const wordsAmount = 4;
 
@@ -24,19 +26,21 @@ const Game = ({ setGameState, setScore, score }) => {
 
 		_words.splice(wordsAmount, _words.length - wordsAmount);
 
-		_words.forEach((wordObj) => {
-			wordObj.puzzleWord = wordObj.word.toUpperCase().split("");
-			const randomIndex = Math.floor(Math.random() * wordObj.puzzleWord.length);
-			wordObj.selectedLetter = wordObj.puzzleWord[randomIndex];
-			wordObj.missingLetterIndex = randomIndex;
-			wordObj.puzzleWord[randomIndex] = "?";
-			wordObj.guessMade = false;
-			wordObj.isCorrect = false;
-		});
 
-		console.log(_words);
-		setGameWords(_words);
-	}, []);
+    _words.forEach((wordObj) => {
+      wordObj.puzzleWord = wordObj.word.toUpperCase().split("");
+      const randomIndex = Math.floor(Math.random() * wordObj.puzzleWord.length);
+      wordObj.selectedLetter = wordObj.puzzleWord[randomIndex];
+      wordObj.missingLetterIndex = randomIndex;
+      wordObj.puzzleWord[randomIndex] = "?";
+      wordObj.guessMade = false;
+      wordObj.isCorrect = false;
+    });
+
+    console.log(_words);
+    setGameWords(_words);
+  }, []);
+
 
 	const nextWord = () => {
 		// end the game
@@ -58,7 +62,8 @@ const Game = ({ setGameState, setScore, score }) => {
 
 	if (!gameWords) return;
 
-	const wordObj = gameWords[currentWordIndex];
+
+  const wordObj = gameWords[currentWordIndex];
 
 	const handleSubmit = () => {
 		if (inputLetter) setSubmit(true);
@@ -117,6 +122,7 @@ const Game = ({ setGameState, setScore, score }) => {
 			<button onClick={handleSubmit}>Submit</button>
 		</>
 	);
+
 };
 
 export default Game;
