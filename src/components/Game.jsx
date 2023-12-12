@@ -5,21 +5,24 @@ import { words } from "../data/wordlist";
 import Keyboard from "./Keyboard";
 import Words from "./Words";
 
-const Game = () => {
+const wordsAmount = 4;
+
+const Game = ({ setGameState, setScore, score }) => {
 	const [gameWords, setGameWords] = useState();
 	const [currentWordIndex, setCurrentWordIndex] = useState(0);
 	const [inputLetter, setInputLetter] = useState("");
+	const [submit, setSubmit] = useState(false);
 
 	useEffect(() => {
 		// initialise gamewords state
 		// choose 10 random words from the wordlist
-
+		setScore(0);
 		const _words = [...words];
 		_words.sort((a, b) => {
 			return Math.random() < 0.5 ? -1 : 1;
 		});
 
-		_words.splice(10, _words.length - 10);
+		_words.splice(wordsAmount, _words.length - wordsAmount);
 
 		_words.forEach((wordObj) => {
 			wordObj.puzzleWord = wordObj.word.toUpperCase().split("");
@@ -36,45 +39,46 @@ const Game = () => {
 	}, []);
 
 	const nextWord = () => {
+		// end the game
+		if (currentWordIndex === wordsAmount - 1) {
+			setGameState(2);
+
+			return;
+		}
 		setCurrentWordIndex((prevState) => prevState + 1);
 		setInputLetter("");
 	};
 
-	const handleLetterClick = () => {
-		// show keyboard
+	const changeLetter = (letter) => {
+		console.log(letter);
+		setInputLetter(letter);
+		wordObj.puzzleWord[wordObj.missingLetterIndex] = letter;
+		useTextToSpeech(letter);
 	};
-
-	useEffect(() => {
-		// useTextToSpeech(inputLetter);
-		if (gameWords && wordObj.isCorrect) {
-			useTextToSpeech(wordObj.word);
-		}
-		// setInputLetter("");
-	}, [inputLetter]);
-
-	useEffect(() => {
-		console.log(inputLetter);
-		if (inputLetter) {
-			wordObj.puzzleWord[wordObj.missingLetterIndex] = inputLetter;
-		}
-	}, [inputLetter]);
 
 	if (!gameWords) return;
 
 	const wordObj = gameWords[currentWordIndex];
 
 	const handleSubmit = () => {
-		if (inputLetter) {
-			wordObj.guessMade = true;
-			wordObj.isCorrect = inputLetter === wordObj.selectedLetter;
-			wordObj.puzzleWord = wordObj.puzzleWord.map((letter) =>
-				letter === "?" ? inputLetter : letter
-			);
-		}
+		if (inputLetter) setSubmit(true);
 	};
+
+	if (submit) {
+		wordObj.guessMade = true;
+		wordObj.isCorrect =
+			wordObj.puzzleWord.join("").toLowerCase() === wordObj.word.toLowerCase();
+		if (wordObj.isCorrect) {
+			setScore((prev) => prev + 1);
+			useTextToSpeech(wordObj.word);
+		}
+
+		setSubmit(false);
+	}
 
 	return (
 		<>
+			<h3>Score: {score / 2}</h3>
 			<div className="words-container">
 				<img
 					src={wordObj.image}
@@ -84,7 +88,6 @@ const Game = () => {
 				<button onClick={() => useTextToSpeech(wordObj.word)}>
 					<AiOutlineSound />
 				</button>
-				<h3>Word to guess:</h3>
 				<div className="guess-word">
 					{wordObj.puzzleWord.map((letter, index) => (
 						<span
@@ -99,6 +102,7 @@ const Game = () => {
 			</div>
 			{!wordObj.guessMade ? (
 				<Keyboard
+					changeLetter={changeLetter}
 					setInputLetter={setInputLetter}
 					correctLetter={wordObj.selectedLetter}
 				/>
