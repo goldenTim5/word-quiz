@@ -64,3 +64,23 @@
   background-color: blue;
   color: white;
 }
+
+.submit-button {
+  cursor: pointer;
+  background-color: #f4a261;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px black;
+  font-size: 2rem;
+  padding: 0.7rem 1.6rem;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: blue;
+  color: white;
+}
