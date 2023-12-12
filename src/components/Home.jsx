@@ -6,15 +6,16 @@ import Start from "./Start";
 import Words from "./Words";
 
 const Home = () => {
-	const [gameState, setGameState] = useState(1);
+	const [gameState, setGameState] = useState(0);
 	const [score, setScore] = useState(0);
+	if (gameState === undefined) return;
 	return (
 		<>
-			{gameState && gameState === 0 && <Start setGameState={setGameState} />}
-			{gameState && gameState === 1 && (
-				<Game setGameState={setGameState} setScore={setScore} />
+			{gameState === 0 && <Start setGameState={setGameState} />}
+			{gameState === 1 && (
+				<Game setGameState={setGameState} setScore={setScore} score={score} />
 			)}
-			{gameState && gameState === 2 && (
+			{gameState === 2 && (
 				<GameOver setGameState={setGameState} score={score} />
 			)}
 		</>
