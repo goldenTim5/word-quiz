@@ -49,7 +49,7 @@ export const useSpeechToText = (setTranscript, setIsListening, isListening) => {
 // Text to Speech Function
 export const useTextToSpeech = (text) => {
   //creates instance of speech synthesis utterance
-  const utterance = new SpeechSynthesisUtterance(text);
+  const utterance = new SpeechSynthesisUtterance(text.toLowerCase());
   //converts text into spoken word
   speechSynthesis.speak(utterance);
 };
