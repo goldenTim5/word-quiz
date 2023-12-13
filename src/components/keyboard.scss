@@ -1,86 +1,89 @@
 .keyboard {
-  background-color: lightcyan;
-  // border: 2px solid blueviolet;
-  // box-shadow: 0 0 10px blueviolet;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 20px 40px;
+	background-color: lightcyan;
+	// border: 2px solid blueviolet;
+	// box-shadow: 0 0 10px blueviolet;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 20px 40px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 50px;
-  max-width: fit-content;
-  margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 50px;
+	max-width: fit-content;
+	margin: auto;
 }
 
 .keyboard-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .keyboard-letter,
 .keyboard-letter-hidden {
-  cursor: pointer;
-  color: #264653;
-  background-color: #e9c46a;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin: 5px;
-  width: 60px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 2px black;
+	cursor: pointer;
+	color: #264653;
+	background-color: #e9c46a;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: 5px;
+	width: 60px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 2px black;
+	transition: all 200ms;
 }
 
 .keyboard-letter-hidden {
-  opacity: 0.2;
+	opacity: 0.2;
 }
 
 .keyboard-letter:hover {
-  background-color: blue;
-  color: white;
+	background-color: blue;
+	color: white;
 }
 
 .keyboard-hint-button {
-  cursor: pointer;
-  background-color: #f4a261;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin: 10px;
-  width: 250px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 2px black;
+	cursor: pointer;
+	background-color: #f4a261;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: 10px;
+	width: 250px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 2px black;
+	transition: all 200ms;
 }
 
 .keyboard-hint-button:hover {
-  background-color: blue;
-  color: white;
+	background-color: blue;
+	color: white;
 }
 
 .submit-button {
-  cursor: pointer;
-  background-color: #f4a261;
-  border-radius: 10px;
-  border: 1px solid black;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 2px black;
-  font-size: 2rem;
-  padding: 0.7rem 1.6rem;
-  margin-top: 10px;
+	cursor: pointer;
+	background-color: #f4a261;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 2px black;
+	font-size: 2rem;
+	padding: 0.7rem 1.6rem;
+	margin-top: 10px;
+	transition: all 200ms;
 }
 
 .submit-button:hover {
-  background-color: blue;
-  color: white;
+	background-color: blue;
+	color: white;
 }

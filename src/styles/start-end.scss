@@ -1,14 +1,30 @@
 .start-end-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #e9c46a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #e9c46a;
 }
 
 .final-score {
-  color: white;
+	color: white;
 }
 
 .start-instructions {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
+}
+
+.logo {
+	animation: logo-animation 3s ease-in-out infinite;
+}
+
+@keyframes logo-animation {
+	0% {
+		scale: 1;
+	}
+	50% {
+		scale: 1.1;
+	}
+	100% {
+		scale: 1;
+	}
 }

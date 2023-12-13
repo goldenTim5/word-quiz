@@ -19,7 +19,7 @@
 		scale: 1;
 	}
 	.letter-animation {
-		animation: letter-animation 1s linear infinite;
+		animation: letter-animation 1s ease-in-out infinite;
 	}
 	.guess-word {
 		display: flex;
