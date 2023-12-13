@@ -6,7 +6,7 @@ import Keyboard from "./Keyboard";
 import Words from "./Words";
 import "./game.scss";
 
-const wordsAmount = 4;
+const wordsAmount = 5;
 
 const Game = ({ setGameState, setScore, score }) => {
 	const [gameWords, setGameWords] = useState();
@@ -86,9 +86,6 @@ const Game = ({ setGameState, setScore, score }) => {
 					alt={wordObj.word}
 					onClick={() => useTextToSpeech(wordObj.word)}
 				/>
-				<button onClick={() => useTextToSpeech(wordObj.word)}>
-					<AiOutlineSound />
-				</button>
 				<div className="guess-word">
 					{wordObj.puzzleWord.map((letter, index) => (
 						<div className="letter">
