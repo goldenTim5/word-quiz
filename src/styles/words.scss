@@ -1,22 +1,41 @@
 .words-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  img {
-    width: 250px;
-    cursor: pointer;
-  }
-  .letter {
-    font-size: 5em;
-    padding: 2rem;
-    padding-bottom: 0;
-    border-bottom: 2px solid black;
-    cursor: pointer;
-  }
-  .guess-word {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
+	img {
+		width: 250px;
+		cursor: pointer;
+	}
+	.letter {
+		font-size: 5em;
+		padding: 2rem;
+		padding-bottom: 0;
+		border-bottom: 2px solid black;
+		cursor: pointer;
+	}
+	.letter-content {
+		display: inline-block;
+		scale: 1;
+	}
+	.letter-animation {
+		animation: letter-animation 1s linear infinite;
+	}
+	.guess-word {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+}
+
+@keyframes letter-animation {
+	0% {
+		scale: 1;
+	}
+	50% {
+		scale: 1.4;
+	}
+	100% {
+		scale: 1;
+	}
 }
