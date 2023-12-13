@@ -2,7 +2,7 @@ export const words = [
   {
     word: "Cat",
     image:
-      "https://i.etsystatic.com/35554607/r/il/699171/4692345180/il_1080xN.4692345180_jsca.jpg",
+      "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/6006/cat-clipart-md.png",
   },
   {
     word: "Dog",
@@ -13,44 +13,44 @@ export const words = [
   {
     word: "Boy",
     image:
-      "https://static.vecteezy.com/system/resources/previews/015/840/578/non_2x/cartoon-cute-boy-waving-hand-free-vector.jpg",
+      //   "https://png.pngtree.com/png-clipart/20190921/original/pngtree-little-boy-in-the-sunshine-png-image_4692913.jpg",
+      "https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-cartoon-happy-school-boy-waving-hand-png-image_4691658.png",
   },
   {
     word: "Bus",
     image:
-      "https://img.freepik.com/free-vector/cartoon-school-bus-white-background_1308-132853.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702252800&semt=ais",
+      "https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/School_Bus_PNG_Clipart_Image.png?m=1439952901",
   },
 
   {
     word: "Bee",
-    image:
-      "https://i.etsystatic.com/13434992/r/il/3bf90f/3219303725/il_fullxfull.3219303725_kovf.jpg",
+    image: "https://pngimg.com/uploads/bee/bee_PNG74720.png",
   },
 
   {
     word: "Cow",
-    image:
-      "https://t4.ftcdn.net/jpg/02/58/94/67/360_F_258946740_dBbJY1rhi3x46WZHgkrbf9OxZ1wJiP8B.jpg",
+    image: "https://pngfre.com/wp-content/uploads/cow-png-from-pngfre-17.png",
   },
   {
     word: "Dad",
     image:
-      "https://static.vecteezy.com/system/resources/previews/025/376/273/non_2x/father-carrying-his-son-cartoon-colored-clipart-free-vector.jpg",
+      //   "https://static.vecteezy.com/system/resources/previews/025/376/273/non_2x/father-carrying-his-son-cartoon-colored-clipart-free-vector.jpg",
+      "https://static.vecteezy.com/system/resources/previews/009/665/205/non_2x/father-hugging-his-son-inside-a-house-vector-flat-character-illustration-with-a-home-interior-concept-father-and-son-hugging-house-interior-with-blue-sofa-wall-clock-table-lamp-and-bookshelf-free-png.png",
   },
   {
     word: "Egg",
     image:
-      "https://www.shutterstock.com/image-vector/happy-cute-smiling-egg-vector-600nw-694413472.jpg",
+      "https://png.pngtree.com/png-clipart/20231016/original/pngtree-egg-illustration-with-smiling-face-png-image_13319034.png",
   },
   {
     word: "Fox",
     image:
-      "https://img.freepik.com/premium-vector/fox-cartoon-colored-clipart-illustration_576561-1907.jpg?w=2000",
+      "https://static.vecteezy.com/system/resources/previews/024/044/211/original/fox-icon-clipart-transparent-background-free-png.png",
   },
   {
     word: "Hat",
     image:
-      "https://www.shutterstock.com/image-vector/hat-vector-illustrationisolated-on-white-600nw-2183045863.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX9b7vtPPI8FJHWWMxvmzVhY6rqOEIaJMfQ&usqp=CAU",
   },
   {
     word: "Mum",
@@ -60,7 +60,7 @@ export const words = [
   {
     word: "Car",
     image:
-      "https://static.vecteezy.com/system/resources/previews/008/957/252/original/flat-red-car-icon-clipart-in-cartoon-graphic-illustration-design-vector.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX9b7vtPPI8FJHWWMxvmzVhY6rqOEIaJMfQ&usqp=CAU",
   },
   {
     word: "Key",
@@ -75,7 +75,7 @@ export const words = [
   {
     word: "Ear",
     image:
-      "https://www.shutterstock.com/image-vector/vector-illustration-ear-on-white-600nw-1161038935.jpg",
+      "https://static.vecteezy.com/system/resources/previews/019/806/666/non_2x/ear-listening-graphic-clipart-design-free-png.png",
   },
   {
     word: "Owl",
