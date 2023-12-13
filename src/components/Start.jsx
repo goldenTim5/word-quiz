@@ -5,9 +5,12 @@ const Start = ({ setGameState }) => {
   return (
     <>
       <div className="start-end-screen">
-        <h1>Start Game</h1>
-        <h1>Welcome to What3Letters</h1>
-        <img src={`whatthreeletters.svg`} height="100px" width="100px" />
+        <img
+          src={`whatthreeletters.svg`}
+          height="600px"
+          width="600px"
+          className="logo"
+        />
         <p className="start-instructions">
           Click on the button below to start a new game
         </p>
