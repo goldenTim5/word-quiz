@@ -40,7 +40,7 @@ export const words = [
   {
     word: "Egg",
     image:
-      "https://png.pngtree.com/png-clipart/20231016/original/pngtree-egg-illustration-with-smiling-face-png-image_13319034.png",
+      "https://i.pinimg.com/originals/ff/4e/64/ff4e64de51c7d353446385ece81b94b8.png",
   },
   {
     word: "Fox",
@@ -50,7 +50,7 @@ export const words = [
   {
     word: "Hat",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX9b7vtPPI8FJHWWMxvmzVhY6rqOEIaJMfQ&usqp=CAU",
+      "https://i.pinimg.com/originals/ff/4e/64/ff4e64de51c7d353446385ece81b94b8.png",
   },
   {
     word: "Mum",
@@ -60,7 +60,7 @@ export const words = [
   {
     word: "Car",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX9b7vtPPI8FJHWWMxvmzVhY6rqOEIaJMfQ&usqp=CAU",
+      "https://www.pngall.com/wp-content/uploads/8/Red-SUV-Transparent.png",
   },
   {
     word: "Key",
