@@ -79,7 +79,7 @@ const Game = ({ setGameState, setScore, score }) => {
 
 	return (
 		<>
-			<h3 className="score">Score: {score / 2}</h3>
+			<h3 className="score">Score: {score}</h3>
 			<div className="words-container">
 				<img
 					src={wordObj.image}
