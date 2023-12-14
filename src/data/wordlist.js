@@ -50,7 +50,7 @@ export const words = [
   {
     word: "Hat",
     image:
-      "https://i.pinimg.com/originals/ff/4e/64/ff4e64de51c7d353446385ece81b94b8.png",
+      "https://static.vecteezy.com/system/resources/previews/009/397/828/non_2x/cap-clipart-design-illustration-free-png.png",
   },
   {
     word: "Mum",
