@@ -1,10 +1,10 @@
-# What Three Letters - Interactive Learning App
+# Word Quiz - Interactive Learning App
 
 ## 🌐 Project
 
-What Three Letters is an innovative app designed for children's reading and learning, developed as the final project for The Jump bootcamp course during a hackathon. Created by a team of five, this app is built with React and offers a playful, educational experience for young learners.
+Word Quiz is an innovative app designed for children's reading and learning. Created by a team of five, this app is built with React and offers a playful, educational experience for young learners.
 
-### 🏠 [Demo Link](https://what-three-letters.netlify.app/)
+### 🏠 [Demo Link](https://gf-word-quiz.netlify.app/)
 
 ![alt text](src/assets/image.PNG)
 
@@ -21,7 +21,7 @@ What Three Letters is an innovative app designed for children's reading and lear
 Clone the repository
 
 ```
-git clone https://github.com/Gunnar50/what-three-letter.git
+git clone https://github.com/goldenTim5/word-quiz.git
 ```
 
 Navigate to the project directory
@@ -42,13 +42,9 @@ Start the development server
 npm start
 ```
 
-## 📚 Hackathon Challenge
-
-This app was created within an 8-hour hackathon, where the theme and requirements were unveiled at the event's start. Our team of five tackled this challenge with enthusiasm, resulting in a fun and educational tool that was a great conclusion to The Jump bootcamp course.
-
 ## 🧠 Reflection
 
-Developing What Three Letter was an enjoyable and enlightening experience for our team. We combined our skills to create an interactive and educational game under the unique constraints of a hackathon, highlighting the effectiveness of teamwork and the versatility of React in educational application development.
+Developing Word Quiz was an enjoyable and enlightening experience for our team. We combined our skills to create an interactive and educational game under highlighting the effectiveness of teamwork and the versatility of React in educational application development.
 
 The project posed a series of challenges including:
 
@@ -65,7 +61,7 @@ The project posed a series of challenges including:
 
 ## ⭐️ Show your support
 
-Give a start if you liked and this project helped you!
+Give a star if you liked and this project helped you!
 
 ## 📝 License
 
