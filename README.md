@@ -1,8 +1,8 @@
-# What Three Letter - Interactive Learning App
+# What Three Letters - Interactive Learning App
 
 ## 🌐 Project
 
-What Three Letter is an innovative app designed for children's reading and learning, developed as the final project for The Jump bootcamp course during a hackathon. Created by a team of five, this app is built with React and offers a playful, educational experience for young learners.
+What Three Letters is an innovative app designed for children's reading and learning, developed as the final project for The Jump bootcamp course during a hackathon. Created by a team of five, this app is built with React and offers a playful, educational experience for young learners.
 
 ### 🏠 [Demo Link](https://what-three-letters.netlify.app/)
 
